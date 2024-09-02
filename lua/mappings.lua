@@ -36,5 +36,11 @@ map('i', '<M-j>', '<cmd>:m+1<CR>')
 map('n', '<M-k>', '<cmd>:m-2<CR>')
 map('i', '<M-k>', '<cmd>:m-2<CR>')
 
+-- Autopair {, (, [
+
+vim.cmd('inoremap {<cr> {<cr>}<c-o>O')
+vim.cmd('inoremap [<cr> [<cr>]<c-o>O')
+vim.cmd('inoremap (<cr> (<cr>)<c-o>O')
+
 -- Trouble
 vim.cmd('nnoremap <space>q <cmd>:Trouble diagnostics toggle focus=true<CR>')

@@ -58,3 +58,4 @@ require "nvim-tree".setup {
 }
 
 vim.cmd('set ww=')
+require('nvim-autopairs').disable()
