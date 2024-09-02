@@ -56,3 +56,5 @@ require "nvim-tree".setup {
     enable = true,
   }
 }
+
+vim.cmd('set ww=')
