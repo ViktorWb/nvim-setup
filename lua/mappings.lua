@@ -18,12 +18,20 @@ cmp.setup({
   },
 })
 
+-- Copy paste
 map("v", "<C-c>", "\"+y")
 map("v", "<C-x>", "\"+x")
 map("n", "<C-V>", "\"+gP")
 
+-- Do not yank on delete
 vim.api.nvim_set_keymap('n', 'dd', '"_dd', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'dw', '"_dw', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'db', '"_db', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'x', '"_x', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'D', '"_D', { noremap = true, silent = true })
+
+-- Move line up/down
+map('n', '<M-j>', '<cmd>:m+1<CR>')
+map('i', '<M-j>', '<cmd>:m+1<CR>')
+map('n', '<M-k>', '<cmd>:m-2<CR>')
+map('i', '<M-k>', '<cmd>:m-2<CR>')
