@@ -35,3 +35,6 @@ map('n', '<M-j>', '<cmd>:m+1<CR>')
 map('i', '<M-j>', '<cmd>:m+1<CR>')
 map('n', '<M-k>', '<cmd>:m-2<CR>')
 map('i', '<M-k>', '<cmd>:m-2<CR>')
+
+-- Trouble
+vim.cmd('nnoremap <space>q <cmd>:Trouble diagnostics toggle focus=true<CR>')

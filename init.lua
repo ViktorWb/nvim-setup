@@ -1,25 +1,3 @@
-vim.g.rustaceanvim = {
-  -- Plugin configuration
-  tools = {
-      enable_clippy = false
-  },
-  -- LSP configuration
-  server = {
-    on_attach = function(client, bufnr)
-        -- you can also put keymaps in here
-        vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>f", "<cmd>lua vim.lsp.buf.format()<CR>", { noremap=true, silent=true })
-    end,
-    default_settings = {
-        -- rust-analyzer language server configuration
-        ['rust-analyzer'] = {
-        },
-    },
-  },
-  -- DAP configuration
-  dap = {
-  },
-}
-
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 
