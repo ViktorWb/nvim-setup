@@ -50,3 +50,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
 })
 
 vim.cmd('set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab')
+
+require "nvim-tree".setup {
+  diagnostics = {
+    enable = true,
+  }
+}
