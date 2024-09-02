@@ -1,9 +1,11 @@
-**This repo is supposed to used as config by NvChad users!**
+# Desktop configuration
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+## Neovim + Alacritty
 
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+- Download alacritty using `sudo snap install alacritty --classic`
+- Download Neovim `0.10.1` from the releases page on github (https://github.com/neovim/neovim/releases/download/v0.10.1/nvim-linux64.tar.gz), extract somehwere and add the bin folder to path
+- Install language servers - `npm i typescript-language-server -g`, `pip3 install pyright`
+- Download `JetBrainsMono nerd font` from https://www.nerdfonts.com/font-downloads, and install the font `JetBrainsMonoNerdFont-Medium.ttf`
+- Configure Alacritty to use the font by copying the file `alacritty.toml` in this repo to `~/.config/alacritty/alacritty.toml`
+- Clone this repository to the nvim configuration folder: `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim`
+- Run `:MasonInstallAll`
