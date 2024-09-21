@@ -3,8 +3,8 @@ local options = {
     lua = { "stylua" },
     -- css = { "prettier" },
     -- html = { "prettier" },
-    javascript = { "prettier" },
-    typescript = { "prettier" },
+    javascript = { "prettierd" },
+    typescript = { "prettierd" },
   },
 
   -- format_on_save = {

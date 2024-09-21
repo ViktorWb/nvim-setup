@@ -1,3 +1,22 @@
+vim.cmd([[
+call plug#begin()
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
+let g:prettier#config#semi = 'false'
+let g:prettier#config#trailing_comma = 'none'
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#print_width = '160'
+
+call plug#end()
+]])
+
+vim.api.nvim_create_autocmd({"VimEnter"}, {
+  callback = function()
+      -- For some reason vim-plug doesn't load plugins unless we call plug#end after vimenter..
+      vim.call("plug#end")
+  end,
+})
+
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 

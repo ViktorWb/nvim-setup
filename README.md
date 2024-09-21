@@ -9,3 +9,4 @@
 - Configure Alacritty to use the font by copying the file `alacritty.toml` in this repo to `~/.config/alacritty/alacritty.toml`
 - Clone this repository to the nvim configuration folder: `git clone https://github.com/ViktorWb/nvim-setup ~/.config/nvim && nvim`
 - Run `:MasonInstallAll`
+- Run `:PlugInstall`
