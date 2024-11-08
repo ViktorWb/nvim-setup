@@ -78,3 +78,5 @@ require "nvim-tree".setup {
 
 vim.cmd('set ww=')
 require('nvim-autopairs').disable()
+
+vim.cmd('set noic')
