@@ -22,6 +22,13 @@ for _, lsp in ipairs(servers) do
     on_attach = on_attach,
     on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
+    settings = {
+        ['rust-analyzer'] = {
+            check = {
+                command = "clippy"
+            }
+        },
+    }
   }
 end
 
