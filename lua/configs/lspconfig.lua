@@ -14,6 +14,13 @@ local on_attach = function(client, bufnr)
         vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>f", "<cmd>lua vim.lsp.buf.format()<CR>", { noremap=true, silent=true })
       end
     nvlsp.on_attach(client, bufnr)
+    require "lsp_signature".on_attach({
+      bind = true,
+      handler_opts = {
+        border = "rounded"
+      }
+    }, bufnr)
+    vim.api.nvim_clear_autocmds({ group = "LspSignature", buffer = bufnr })
 end
 
 -- lsps with default config
