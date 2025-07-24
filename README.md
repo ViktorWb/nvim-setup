@@ -8,5 +8,6 @@
 - Download `JetBrainsMono nerd font` from https://www.nerdfonts.com/font-downloads, and install the font `JetBrainsMonoNerdFont-Medium.ttf`
 - Configure Alacritty to use the font by copying the file `alacritty.toml` in this repo to `~/.config/alacritty/alacritty.toml`
 - Clone this repository to the nvim configuration folder: `git clone https://github.com/ViktorWb/nvim-setup ~/.config/nvim && nvim`
-- Run `:MasonInstallAll`
 - Run `:PlugInstall`
+- Install xclip: `sudo apt install xclip`
+- Install gnome-tweaks, go to keyboard -> additional layout options -> caps lock behaviour -> make caps lock an additional esc: `sudo apt install gnome-tweaks`

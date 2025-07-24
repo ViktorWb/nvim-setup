@@ -20,7 +20,6 @@ local on_attach = function(client, bufnr)
         border = "rounded"
       }
     }, bufnr)
-    vim.api.nvim_clear_autocmds({ group = "LspSignature", buffer = bufnr })
 end
 
 -- lsps with default config
